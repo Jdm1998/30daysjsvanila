@@ -1,0 +1,18 @@
+body{
+    background-image: url('background.jpg');
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 10%;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin :10px;
+    opacity:50%;
+    border: solid 5px black;
+}
+span{
+    color:red;
+}
