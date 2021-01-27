@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel=stylesheet href="style.css">
+    <script href="script.js"></script>
 </head>
 <body>
     <div>
@@ -17,33 +19,6 @@
 </div>
 <img src="https://images.unsplash.com/photo-1479502806991-251c94be6b15?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80">
 
-<style>
-    :root{
-        --space: 10px;
-        --base:blue;
-        --blur:10px;
-    }
-    body{
-        background-color: cadetblue;
-    }
-    img{
-    height: 490px;;
-    padding: var(--space);
-    padding-top: var(--space);
-       background: var(--base);
-       filter:blur(var(--blur));
-    }
-</style>
-<script>
-    const inputs=document.querySelectorAll('input');
-    console.log(inputs);
-    function update(){
-        console.log(this.name);
-        var suf= this.dataset.sizing||"";
-        document.documentElement.style.setProperty(`--${this.name}`,this.value+suf);
-    }
-    inputs.forEach(input => input.addEventListener("change",update));
-    </script>
 </body>
 
 </html>

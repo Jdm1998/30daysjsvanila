@@ -1,0 +1,17 @@
+
+    :root{
+        --space: 10px;
+        --base:blue;
+        --blur:10px;
+    }
+    body{
+        background-color: cadetblue;
+    }
+    img{
+    height: 490px;;
+    padding: var(--space);
+    padding-top: var(--space);
+       background: var(--base);
+       filter:blur(var(--blur));
+    }
+
